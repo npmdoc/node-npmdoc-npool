@@ -1,0 +1,503 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/inh3/nPool"
+
+    >npool (v1.4.7)</a>
+</h1>
+<h4>A cross-platform thread pool add-on for Node.js and io.js</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npool">module npool</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.createThreadPool">
+            function <span class="apidocSignatureSpan">npool.</span>createThreadPool
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.destroyThreadPool">
+            function <span class="apidocSignatureSpan">npool.</span>destroyThreadPool
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.loadFile">
+            function <span class="apidocSignatureSpan">npool.</span>loadFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.queueWork">
+            function <span class="apidocSignatureSpan">npool.</span>queueWork
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.removeFile">
+            function <span class="apidocSignatureSpan">npool.</span>removeFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npool.createThreadPool">module npool.createThreadPool</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.createThreadPool.createThreadPool">
+            function <span class="apidocSignatureSpan">npool.</span>createThreadPool
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npool.destroyThreadPool">module npool.destroyThreadPool</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.destroyThreadPool.destroyThreadPool">
+            function <span class="apidocSignatureSpan">npool.</span>destroyThreadPool
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npool.loadFile">module npool.loadFile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.loadFile.loadFile">
+            function <span class="apidocSignatureSpan">npool.</span>loadFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npool.queueWork">module npool.queueWork</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.queueWork.queueWork">
+            function <span class="apidocSignatureSpan">npool.</span>queueWork
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npool.removeFile">module npool.removeFile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npool.removeFile.removeFile">
+            function <span class="apidocSignatureSpan">npool.</span>removeFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npool" id="apidoc.module.npool">module npool</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npool.createThreadPool" id="apidoc.element.npool.createThreadPool">
+        function <span class="apidocSignatureSpan">npool.</span>createThreadPool
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createThreadPool = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// work complete callback from thread pool
+var callbackFunction = function (callbackObject, workId, exceptionObject) { ... }
+
+// load files defining object types
+nPool.loadFile(1, __dirname + &#x27;/objectType.js&#x27;);
+
+// create thread pool with two threads
+nPool.<span class="apidocCodeKeywordSpan">createThreadPool</span>(2);
+
+// create the unit of work object
+var unitOfWork = {
+workId: 9124,
+fileKey: 1,
+workFunction: &#x22;objectMethod&#x22;,
+workParam: {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npool.destroyThreadPool" id="apidoc.element.npool.destroyThreadPool">
+        function <span class="apidocSignatureSpan">npool.</span>destroyThreadPool
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroyThreadPool = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+This function takes no parameters.
+
+**Example:**
+
+```js
+// destroy the thread pool
+nPool.<span class="apidocCodeKeywordSpan">destroyThreadPool</span>();
+```
+
+---
+
+### loadFile
+
+```js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npool.loadFile" id="apidoc.element.npool.loadFile">
+        function <span class="apidocSignatureSpan">npool.</span>loadFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadFile = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// load nPool module
+var nPool = require(&#x27;npool&#x27;);
+
+// work complete callback from thread pool
+var callbackFunction = function (callbackObject, workId, exceptionObject) { ... }
+
+// load files defining object types
+nPool.<span class="apidocCodeKeywordSpan">loadFile</span>(1, __dirname + &#x27;/objectType.js&#x27;);
+
+// create thread pool with two threads
+nPool.createThreadPool(2);
+
+// create the unit of work object
+var unitOfWork = {
+workId: 9124,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npool.queueWork" id="apidoc.element.npool.queueWork">
+        function <span class="apidocSignatureSpan">npool.</span>queueWork
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queueWork = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    },
+
+    callbackFunction: callbackFunction,
+    callbackContext: this
+}
+
+// queue the unit of work
+nPool.<span class="apidocCodeKeywordSpan">queueWork</span>(unitOfWork);
+```
+
+---
+
+### createThreadPool
+
+```js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npool.removeFile" id="apidoc.element.npool.removeFile">
+        function <span class="apidocSignatureSpan">npool.</span>removeFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeFile = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+There must exist a file for the given key.
+
+**Example:**
+
+```js
+// remove file associated with fileKey: 1
+nPool.<span class="apidocCodeKeywordSpan">removeFile</span>(1);
+```
+
+---
+
+### queueWork
+
+```js
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npool.createThreadPool" id="apidoc.module.npool.createThreadPool">module npool.createThreadPool</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npool.createThreadPool.createThreadPool" id="apidoc.element.npool.createThreadPool.createThreadPool">
+        function <span class="apidocSignatureSpan">npool.</span>createThreadPool
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createThreadPool = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// work complete callback from thread pool
+var callbackFunction = function (callbackObject, workId, exceptionObject) { ... }
+
+// load files defining object types
+nPool.loadFile(1, __dirname + &#x27;/objectType.js&#x27;);
+
+// create thread pool with two threads
+nPool.<span class="apidocCodeKeywordSpan">createThreadPool</span>(2);
+
+// create the unit of work object
+var unitOfWork = {
+workId: 9124,
+fileKey: 1,
+workFunction: &#x22;objectMethod&#x22;,
+workParam: {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npool.destroyThreadPool" id="apidoc.module.npool.destroyThreadPool">module npool.destroyThreadPool</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npool.destroyThreadPool.destroyThreadPool" id="apidoc.element.npool.destroyThreadPool.destroyThreadPool">
+        function <span class="apidocSignatureSpan">npool.</span>destroyThreadPool
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroyThreadPool = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+This function takes no parameters.
+
+**Example:**
+
+```js
+// destroy the thread pool
+nPool.<span class="apidocCodeKeywordSpan">destroyThreadPool</span>();
+```
+
+---
+
+### loadFile
+
+```js
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npool.loadFile" id="apidoc.module.npool.loadFile">module npool.loadFile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npool.loadFile.loadFile" id="apidoc.element.npool.loadFile.loadFile">
+        function <span class="apidocSignatureSpan">npool.</span>loadFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">loadFile = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// load nPool module
+var nPool = require(&#x27;npool&#x27;);
+
+// work complete callback from thread pool
+var callbackFunction = function (callbackObject, workId, exceptionObject) { ... }
+
+// load files defining object types
+nPool.<span class="apidocCodeKeywordSpan">loadFile</span>(1, __dirname + &#x27;/objectType.js&#x27;);
+
+// create thread pool with two threads
+nPool.createThreadPool(2);
+
+// create the unit of work object
+var unitOfWork = {
+workId: 9124,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npool.queueWork" id="apidoc.module.npool.queueWork">module npool.queueWork</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npool.queueWork.queueWork" id="apidoc.element.npool.queueWork.queueWork">
+        function <span class="apidocSignatureSpan">npool.</span>queueWork
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queueWork = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    },
+
+    callbackFunction: callbackFunction,
+    callbackContext: this
+}
+
+// queue the unit of work
+nPool.<span class="apidocCodeKeywordSpan">queueWork</span>(unitOfWork);
+```
+
+---
+
+### createThreadPool
+
+```js
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npool.removeFile" id="apidoc.module.npool.removeFile">module npool.removeFile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npool.removeFile.removeFile" id="apidoc.element.npool.removeFile.removeFile">
+        function <span class="apidocSignatureSpan">npool.</span>removeFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeFile = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+There must exist a file for the given key.
+
+**Example:**
+
+```js
+// remove file associated with fileKey: 1
+nPool.<span class="apidocCodeKeywordSpan">removeFile</span>(1);
+```
+
+---
+
+### queueWork
+
+```js
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
