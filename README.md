@@ -1,4 +1,7 @@
-# api documentation for  [npool (v1.4.7)](https://github.com/inh3/nPool)  [![npm package](https://img.shields.io/npm/v/npmdoc-npool.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npool) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npool.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npool)
+# npmdoc-npool
+
+#### basic api documentation for  [npool (v1.4.7)](https://github.com/inh3/nPool)  [![npm package](https://img.shields.io/npm/v/npmdoc-npool.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npool) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npool.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npool)
+
 #### A cross-platform thread pool add-on for Node.js and io.js
 
 [![NPM](https://nodei.co/npm/npool.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/npool)
@@ -81,7 +84,8 @@
         "install": "node-gyp rebuild",
         "test": "make test"
     },
-    "version": "1.4.7"
+    "version": "1.4.7",
+    "bin": {}
 }
 ```
 
